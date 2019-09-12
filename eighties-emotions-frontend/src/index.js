@@ -277,7 +277,7 @@ yearList.addEventListener("click", (event) => {
   if (event.target.tagName === "LI") {
       // console.log("lolnope nice try")
       // debugger
-      console.log(event.target.innerText);
+      // console.log(event.target.innerText);
       const foundYear = years.find(year => year.id === parseInt(event.target.id));
       title.innerText = foundYear.name;
       let lastListItem = yearList.lastElementChild;

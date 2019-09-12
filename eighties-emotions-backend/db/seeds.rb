@@ -189,7 +189,7 @@ song36 = Song.create(title: "Girls Just Want to Have Fun", year_id: 4, genre_id:
 song37 = Song.create(title: "Sweet Dreams (Are Made of This)", year_id: 4, genre_id: 3, artist_id: 37, url: "https://www.youtube.com/watch?v=qeMFqkcPYcg")
 song38 = Song.create(title: "Sunglasses at Night", year_id: 4, genre_id: 3, artist_id: 38, url: "https://www.youtube.com/watch?v=56HSPQHSqEE")
 song39 = Song.create(title: "Jump", year_id: 4, genre_id: 4, artist_id: 39, url: "https://www.youtube.com/watch?v=SwYN7mTi6HM")
-song40 = Song.create(title: "Total Eclipse of the Heart", year_id: 2, genre_id: 1, artist_id: 40, url: "https://www.youtube.com/watch?v=lcOxhH8N3Bo")
+song40 = Song.create(title: "Total Eclipse of the Heart", year_id: 4, genre_id: 1, artist_id: 40, url: "https://www.youtube.com/watch?v=lcOxhH8N3Bo")
 
 # '84
 song41 = Song.create(title: "Purple Rain", year_id: 5, genre_id: 1, artist_id: 41, url: "https://www.youtube.com/watch?v=TvnYmWpD_T8")
