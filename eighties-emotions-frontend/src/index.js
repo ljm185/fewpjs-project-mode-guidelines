@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         songBulletPoint.innerText = `${song.title} — ${song.artist.name}`;
         songList.appendChild(songBulletPoint);
       })
-      description.innerHTML = "Click on a song below and feel the <strong>EMOTION</strong>!";
+      description.innerHTML = "Click on a song below and feel the <strong>EMOTION!</strong>";
     })
     .catch(error => console.error(error));
 });
@@ -62,7 +62,7 @@ allSongsButton.addEventListener('click', function(event) {
       songs = songsArray;
       // console.log(songs);
       title.innerText = "All Songs";
-      description.innerHTML = "Click on a song below and feel the <strong>EMOTION</strong>!";
+      description.innerHTML = "Click on a song below and feel the <strong>EMOTION!</strong>";
       musicVideo.innerHTML = "";
       const prevLists = document.querySelectorAll("ul");
       prevLists.forEach(prevList => {
@@ -190,8 +190,8 @@ songList.addEventListener("click", (event) => {
         songList.removeChild(lastListItem);
         lastListItem = songList.lastElementChild;
       }
-      description.innerHTML = `<p>WARNING: Some of these songs may be unplayable. Accursed '80s technology!</p> <p>Buuuuuuuuuut some friendly time travelers from 30 years into the future were gracious enough to send us this mysterious mixture of letters and numbers. Wonder what it does, though.</p> <p><a href="${foundSong.url}">${foundSong.url}</a></p>`;
-      musicVideo.innerHTML = `<iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+      description.innerHTML = `<p><strong>WARNING:</strong> Some of these songs may be unplayable. Accursed '80s technology!</p> <p>Buuuuuuuuuut some friendly time travelers from 30 years into the future were gracious enough to send us this mysterious mixture of letters and numbers. Wonder what it does, though.</p> <p><a href="${foundSong.url}">${foundSong.url}</a></p>`;
+      musicVideo.innerHTML = `<iframe width="1120" height="630" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
       // debugger
       const musicVideoCode = foundSong.url.slice(32);
       document.querySelector("iframe").src = "https://www.youtube.com/embed/" + musicVideoCode + "?autoplay=1"
@@ -219,7 +219,7 @@ artistList.addEventListener("click", (event) => {
         artistList.removeChild(lastListItem);
         lastListItem = artistList.lastElementChild;
       }
-      description.innerHTML = "Click on a song below and feel the <strong>EMOTION</strong>!";
+      description.innerHTML = "Click on a song below and feel the <strong>EMOTION!</strong>";
       const filteredSongs = songs.filter(song => song.artist.id === parseInt(foundArtist.id));
       filteredSongs.forEach(filteredSong => {
         const songBulletPoint = document.createElement("li");
@@ -252,7 +252,7 @@ genreList.addEventListener("click", (event) => {
         genreList.removeChild(lastListItem);
         lastListItem = genreList.lastElementChild;
       }
-      description.innerHTML = "Click on a song below and feel the <strong>EMOTION</strong>!";
+      description.innerHTML = "Click on a song below and feel the <strong>EMOTION!</strong>";
       const filteredSongs = songs.filter(song => song.genre.id === parseInt(foundGenre.id));
       filteredSongs.forEach(filteredSong => {
         const songBulletPoint = document.createElement("li");
@@ -286,7 +286,7 @@ yearList.addEventListener("click", (event) => {
         lastListItem = yearList.lastElementChild;
       }
       const filteredSongs = songs.filter(song => song.year.id === parseInt(foundYear.id));
-      description.innerHTML = "Click on a song below and feel the <strong>EMOTION</strong>!";
+      description.innerHTML = "Click on a song below and feel the <strong>EMOTION!</strong>";
       filteredSongs.forEach(filteredSong => {
         const songBulletPoint = document.createElement("li");
         songBulletPoint.id = filteredSong.id;
